@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.jft.addressbook.GroupDeletionTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-11-25T09:04:06" hostname="CYS" time="0.144">
+  <properties/>
+  <testcase name="testGroupDeletion" classname="ru.stqa.jft.addressbook.GroupDeletionTests" time="0.144">
+    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='selected[]']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'CYS', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [0a8661cb-44c0-4047-a333-a1c6434302ca, findElement {using=name, value=selected[]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.3.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211028170545, moz:debuggerAddress: localhost:53504, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9796, moz:profile: C:\Users\artyo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53504/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0a8661cb-44c0-4047-a333-a1c6434302ca" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='selected[]']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'CYS', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0a8661cb-44c0-4047-a333-a1c6434302ca, findElement {using=name, value=selected[]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.3.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211028170545, moz:debuggerAddress: localhost:53504, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9796, moz:profile: C:\Users\artyo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53504/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a8661cb-44c0-4047-a333-a1c6434302ca
+	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at app//ru.stqa.jft.addressbook.TestBase.selectGroup(TestBase.java:63)
+	at app//ru.stqa.jft.addressbook.GroupDeletionTests.testGroupDeletion(GroupDeletionTests.java:10)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at app//org.testng.TestRunner.run(TestRunner.java:596)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1063)
+	at app//org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1637831041286	geckodriver	INFO	Listening on 127.0.0.1:49445
+1637831042421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox esr\\firefox.exe" "--marionette" "--remote-debugging-port" "53504" "-no-remote" "-profile" "C:\\Users\\artyo\\AppData\\Local\\Temp\\rust_mozprofilelg6hL1"
+1637831042870	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\artyo\\AppData\\Local\\Temp\\rust_mozprofilelg6hL1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53504/devtools/browser/da73f92c-9821-4d4c-b4fe-f332cd0745b2
+1637831045077	Marionette	INFO	Listening on port 50090
+1637831045095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+нояб. 25, 2021 12:04:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1637831046174	Marionette	INFO	Stopped listening on port 50090
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1637831046956	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+]]></system-err>
+</testsuite>
