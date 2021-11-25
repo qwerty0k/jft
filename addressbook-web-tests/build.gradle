@@ -1,14 +1,14 @@
 apply plugin: 'java'
-apply plugin: 'application'
-mainClassName = "ru.stqa.jft.sandbox.Main"
 
 repositories {
     mavenCentral()
 }
+
 dependencies {
     implementation 'org.testng:testng:7.4.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:2.53.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0'
 }
+
 test {
     useTestNG()
 }
