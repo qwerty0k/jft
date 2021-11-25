@@ -14,19 +14,20 @@ public class GroupCreationTests {
     System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox esr\\firefox.exe");
     System.setProperty("webdriver.gecko.driver","C:\\Program Files\\Mozilla Firefox esr\\geckodriver.exe");
     driver = new FirefoxDriver();
-  }
-  @AfterMethod
-  public void tearDown() {
-    driver.quit();
-  }
-  @Test
-  public void GroupCreationTests() {
     driver.get("http://localhost/addressbook/");
     driver.findElement(By.name("user")).click();
     driver.findElement(By.name("user")).sendKeys("admin");
     driver.findElement(By.name("pass")).click();
     driver.findElement(By.name("pass")).sendKeys("secret");
     driver.findElement(By.cssSelector("input:nth-child(7)")).click();
+  }
+  @AfterMethod
+  public void tearDown() {
+    driver.quit();
+  }
+
+  @Test
+  public void testGroupCreation() {
     driver.findElement(By.linkText("groups")).click();
     driver.findElement(By.name("new")).click();
     driver.findElement(By.name("group_name")).click();

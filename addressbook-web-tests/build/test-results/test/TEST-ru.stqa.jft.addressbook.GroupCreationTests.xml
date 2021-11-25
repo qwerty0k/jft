@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.jft.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-21T12:36:27" hostname="CYS" time="1.959">
+<testsuite name="ru.stqa.jft.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-25T06:50:27" hostname="CYS" time="1.185">
   <properties/>
-  <testcase name="test1" classname="ru.stqa.jft.addressbook.GroupCreationTests" time="1.959"/>
+  <testcase name="testGroupCreation" classname="ru.stqa.jft.addressbook.GroupCreationTests" time="1.185"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1637823021892	geckodriver	INFO	Listening on 127.0.0.1:49412
+1637823023026	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox esr\\firefox.exe" "--marionette" "--remote-debugging-port" "60261" "-no-remote" "-profile" "C:\\Users\\artyo\\AppData\\Local\\Temp\\rust_mozprofileuKM2tw"
+1637823023437	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\artyo\\AppData\\Local\\Temp\\rust_mozprofileuKM2tw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60261/devtools/browser/813ac305-73de-42f4-98e0-018c15a37703
+1637823025693	Marionette	INFO	Listening on port 65158
+1637823026186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+нояб. 25, 2021 9:50:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1637823029070	Marionette	INFO	Stopped listening on port 65158
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1637823029804	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+]]></system-err>
 </testsuite>
