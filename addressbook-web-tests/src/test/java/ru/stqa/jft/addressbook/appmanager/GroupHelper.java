@@ -43,4 +43,19 @@ public class GroupHelper extends HelperBase {
     public void submitGroupModification() {
         click(By.name("update"));
     }
+
+    public void createGroup(GroupData group) {
+        initGroupCreation();
+        fillGroupForm(group);
+        submitGroupCreation();
+        returnGroupPage();
+    }
+
+    public boolean isThereAGroup() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public int getGroupCount() {
+        return driver.findElements(By.name("selected[]")).size();
+    }
 }
