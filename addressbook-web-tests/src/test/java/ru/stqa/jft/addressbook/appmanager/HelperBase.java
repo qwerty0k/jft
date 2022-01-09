@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
     protected WebDriver driver;
+    private WebDriver dr;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -20,6 +21,7 @@ public class HelperBase {
             String existingText = driver.findElement(locator).getAttribute("value");
             if (!text.equals(existingText)) {
                 click(locator);
+                driver.findElement(locator).clear();
                 driver.findElement(locator).sendKeys(text);
             }
         }

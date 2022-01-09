@@ -4,22 +4,28 @@ public class ContactData {
     private final String firstname;
     private final String middlename;
     private final String lastname;
-    private final String nickname;
-    private final String tittle;
-    private final String company;
-    private final String address;
-    private final String home;
-    private final String mobile;
-    private final String work;
-    private final String fax;
-    private final String email;
-    private final String email2;
-    private final String email3;
-    private final String homepage;
-    private final String group;
-    private final String address2;
-    private final String phone2;
-    private final String notes;
+    private String nickname;
+    private String tittle;
+    private String company;
+    private String address;
+    private String home;
+    private String mobile;
+    private String work;
+    private String fax;
+    private String email;
+    private String email2;
+    private String email3;
+    private String homepage;
+    private String group;
+    private String address2;
+    private String phone2;
+    private String notes;
+
+    public ContactData(String firstname, String middlename, String lastname) {
+        this.firstname = firstname;
+        this.middlename = middlename;
+        this.lastname = lastname;
+    }
 
     public ContactData(String firstname, String middlename, String lastname, String nickname, String tittle, String company, String address, String home, String mobile, String work, String fax, String email, String email2, String email3, String homepage, String group, String address2, String phone2, String notes) {
         this.firstname = firstname;

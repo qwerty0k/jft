@@ -1,9 +1,15 @@
 package ru.stqa.jft.addressbook.appmanager;
 
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import ru.stqa.jft.addressbook.model.ContactData;
+import ru.stqa.jft.addressbook.model.GroupData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -61,4 +67,18 @@ public class ContactHelper extends HelperBase {
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
+
+   /* public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = driver.findElements(By.className("entry"));
+        for (WebElement element : elements) {
+            String lastName = element.findElement(By.tagName("td")).getText();
+            System.out.println(lastName);
+            String firstName = element.findElement(By.tagName("td")).getText();
+            System.out.println(firstName);
+            ContactData group = new ContactData(lastName, firstName, null);
+            contacts.add(group);
+        }
+        return contacts;
+    }*/
 }
