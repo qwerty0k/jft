@@ -37,7 +37,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("email3"), contactData.getEmail3());
         type(By.name("homepage"), contactData.getHomepage());
 
-        new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        // new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
 
         type(By.name("address2"), contactData.getAddress2());
         type(By.name("phone2"), contactData.getPhone2());
@@ -53,8 +53,8 @@ public class ContactHelper extends HelperBase {
         click(By.cssSelector(".left:nth-child(8) > input"));
         driver.switchTo().alert().accept();
     }
-    public void selectContact() {
-        click(By.name("selected[]"));
+    public void selectContact(int index) {
+        driver.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void createContact(ContactData contact) {
@@ -67,18 +67,22 @@ public class ContactHelper extends HelperBase {
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
+    public void returnToHomePage() {
+        click(By.linkText("home"));
+    }
 
-   /* public List<ContactData> getContactList() {
+   public List<ContactData> getContactList() {
         List<ContactData> contacts = new ArrayList<ContactData>();
-        List<WebElement> elements = driver.findElements(By.className("entry"));
+        List<WebElement> elements = driver.findElements(By.cssSelector("tr"));
+        elements.remove(0);
         for (WebElement element : elements) {
-            String lastName = element.findElement(By.tagName("td")).getText();
-            System.out.println(lastName);
-            String firstName = element.findElement(By.tagName("td")).getText();
-            System.out.println(firstName);
-            ContactData group = new ContactData(lastName, firstName, null);
-            contacts.add(group);
+            String text = element.getText();
+            String[] LastNameAndFirstName = text.split("\\s+");
+            String lastName = LastNameAndFirstName[0];
+            String firstName = LastNameAndFirstName[1];
+            ContactData contact = new ContactData(firstName, null, lastName);
+            contacts.add(contact);
         }
         return contacts;
-    }*/
+    }
 }
